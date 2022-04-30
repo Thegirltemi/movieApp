@@ -1,0 +1,32 @@
+
+
+@media (max-width: 550px){
+
+      .ContentModal__description {
+        font-size: 20px;
+        color: black;
+        width: 100%;
+        padding: 0 10px;   
+        text-align: center;
+        
+      }
+      .ContentModal__title {
+        font-size: 30px;
+        color: black;
+        padding: 0 40px;
+      }
+      .ContentModal__about {
+        width: 100%;
+        padding: 10px 10px;
+        height: 100%;
+      }
+      .ContentModal__portrait {
+        display: flex;
+        width: 100%;
+      }
+      .ContentModal {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 50px 70px;
+      }
+}
