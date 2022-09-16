@@ -7,15 +7,19 @@ import Series from "./Pages/Series/Series";
 import Trending from "./Pages/Trending/Trending";
 import Search from "./Pages/Search/Search";
 import { Container } from "@mui/material";
+import { AuthContextProvider } from "./context/AuthContext";
+import Signin from "./Pages/SignIn/SignIn";
+/* import Protected from "./components/Protected"; */
 
 function App() {
   return (
     <>
+      <AuthContextProvider>
       <Header />
       <div className="App">
         <Container>
           <Routes>
-            <Route path="/" element={<Trending/>} exact />
+            <Route path="/" element={<Signin/>} />
             <Route path="/movies" element={<Movies/>} />
             <Route path="/series" element={<Series/>} />
             <Route path="/search" element={<Search/>} />
@@ -23,6 +27,7 @@ function App() {
         </Container>
       </div>
       <SimpleBottomNavigation />
+      </AuthContextProvider>
     </>
   );
 }
