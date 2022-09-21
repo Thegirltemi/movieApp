@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {  Routes, Route } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header/Header";
 import SimpleBottomNavigation from "./components/MainNav";
@@ -8,7 +8,7 @@ import Trending from "./Pages/Trending/Trending";
 import Search from "./Pages/Search/Search";
 import { Container } from "@mui/material";
 import { AuthContextProvider } from "./context/AuthContext";
-import Signin from "./Pages/SignIn/SignIn";
+/* import Signin from "./Pages/SignIn/SignIn"; */
 /* import Protected from "./components/Protected"; */
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
       <div className="App">
         <Container>
           <Routes>
-            <Route path="/" element={<Signin/>} />
+            <Route path="/" element={<Trending/>} />
             <Route path="/movies" element={<Movies/>} />
             <Route path="/series" element={<Series/>} />
             <Route path="/search" element={<Search/>} />
